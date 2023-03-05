@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TunisairApplication<tunisair>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.tunisair.TunisairApplication",
+            "projectName": "tunisair",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
