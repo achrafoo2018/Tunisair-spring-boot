@@ -34,5 +34,4 @@ public class FlightController {
         }
     }
 
-    // other methods omitted for brevity
 }
