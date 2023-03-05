@@ -8,6 +8,7 @@ import com.example.tunisair.repositories.FlightRepository;
 
 @Service
 public class FlightService {
+    
     @Autowired
     private FlightRepository flightRepository;
 

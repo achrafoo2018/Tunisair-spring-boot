@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication()
 @RestController
+@ComponentScan(basePackages = {"com.example.tunisair.repositories"})
 public class TunisairApplication {
 
 	public static void main(String[] args) {
