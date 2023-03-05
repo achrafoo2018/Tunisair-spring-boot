@@ -1,4 +1,5 @@
 package com.example.tunisair.models;
+
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
@@ -11,37 +12,38 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "flights")
 public class Flight {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     @Column(name = "flight_number")
     private String flightNumber;
-    
+
     @Column(name = "airline")
     private String airline;
-    
+
     @Column(name = "departure_airport")
     private String departureAirport;
-    
+
     @Column(name = "arrival_airport")
     private String arrivalAirport;
-    
+
     @Column(name = "departure_time")
     private LocalDateTime departureTime;
-    
+
     @Column(name = "arrival_time")
     private LocalDateTime arrivalTime;
-    
+
     @Column(name = "seats_available")
     private int seatsAvailable;
-    
+
     @Column(name = "price")
     private double price;
     // constructors, getters and setters
-    
-    public Flight() {}
+
+    public Flight() {
+    }
 
     public Flight(String flightNumber, String airline, String departureAirport, String arrivalAirport,
             LocalDateTime departureTime, LocalDateTime arrivalTime, int seatsAvailable, double price) {
@@ -128,8 +130,8 @@ public class Flight {
     public void setPrice(double price) {
         this.price = price;
     }
-    
-    //toString
+
+    // toString
     @Override
     public String toString() {
         return "Flight [id=" + id + ", flightNumber=" + flightNumber + ", airline=" + airline + ", departureAirport="
@@ -137,4 +139,3 @@ public class Flight {
                 + ", arrivalTime=" + arrivalTime + ", seatsAvailable=" + seatsAvailable + ", price=" + price + "]";
     }
 }
-
